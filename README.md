@@ -1,12 +1,13 @@
 # wechatScanCodeLogin
 ios 客户端微信扫码登录app
-######功能概述
+
+功能概述
 扫码登录能力，指的是开发者可在移动应用内使用此能力，拉取二维码，用户使用微信客户端扫描二维码后可以登录此移动应用。此能力可被应用在多设备登录、智能硬件、电视盒子等场景。
 
 
 ![image](image/scanlogin.gif)
 
-######iOS扫码授权获得Code流程
+#####iOS扫码授权获得Code流程
 步骤一：请求函数
 
 ``#import <WechatAuthSDK.h>``
