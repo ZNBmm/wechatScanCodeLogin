@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Zx-sK-KxF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scan Code Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ScanCodeLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uch-sy-5TG">
+                                <rect key="frame" x="87" y="233.5" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="eyz-ul-23e"/>
+                                    <constraint firstAttribute="height" constant="200" id="pFi-YM-FON"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBA-Iv-SXp">
+                                <rect key="frame" x="141.5" y="453.5" width="92" height="36"/>
+                                <string key="text">微信扫码登录
+爱趣抓娃娃</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信扫一扫" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrL-E8-s2X">
+                                <rect key="frame" x="144" y="192.5" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1y2-zS-pTE">
+                                <rect key="frame" x="324" y="40" width="31" height="30"/>
+                                <state key="normal" title="关闭">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vwy-Sa-Cr2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1y2-zS-pTE" secondAttribute="trailing" constant="20" id="4a3-Mx-gmJ"/>
+                            <constraint firstItem="Uch-sy-5TG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F7p-w3-cu7"/>
+                            <constraint firstItem="QrL-E8-s2X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JNw-74-Ss1"/>
+                            <constraint firstItem="aBA-Iv-SXp" firstAttribute="top" secondItem="Uch-sy-5TG" secondAttribute="bottom" constant="20" id="JRz-T5-7vb"/>
+                            <constraint firstItem="Uch-sy-5TG" firstAttribute="top" secondItem="QrL-E8-s2X" secondAttribute="bottom" constant="20" id="OhF-Ce-2zh"/>
+                            <constraint firstItem="1y2-zS-pTE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="SKl-S8-in0"/>
+                            <constraint firstItem="Uch-sy-5TG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hll-wd-77f"/>
+                            <constraint firstItem="aBA-Iv-SXp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="peQ-MU-GN2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="codeImage" destination="Uch-sy-5TG" id="liP-oz-hgo"/>
+                        <outlet property="tipLabel" destination="aBA-Iv-SXp" id="USV-3B-bRk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956" y="32"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lQX-db-LqR">
+            <objects>
+                <viewController id="7Zx-sK-KxF" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="btS-kY-IUO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ai-rh-KwY">
+                                <rect key="frame" x="142" y="321.5" width="90" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="扫码登录" image="icon_wechatpay_24">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="F0Y-zj-9Yh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3ai-rh-KwY" firstAttribute="centerY" secondItem="btS-kY-IUO" secondAttribute="centerY" id="fsn-le-7or"/>
+                            <constraint firstItem="3ai-rh-KwY" firstAttribute="centerX" secondItem="btS-kY-IUO" secondAttribute="centerX" id="hJu-NG-te2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lWh-03-efz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2UE-jt-jeH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="32"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_wechatpay_24" width="24" height="24"/>
+    </resources>
+</document>

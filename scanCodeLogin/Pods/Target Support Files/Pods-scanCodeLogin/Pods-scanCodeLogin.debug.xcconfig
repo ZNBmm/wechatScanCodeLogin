@@ -1,0 +1,11 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/YYCache" "${PODS_ROOT}/UMCCommon" "${PODS_ROOT}/UMCShare/UMShare"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/UMCCommon" "${PODS_ROOT}/Headers/Public/UMCShare"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/UMCShare/UMShare/SocialLibraries/WeChat" "${PODS_ROOT}/UMCShare/UMShare/SocialLibraries/WeChat/WechatSDK"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking/AFNetworking.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/YYCache/YYCache.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/UMCCommon" -isystem "${PODS_ROOT}/Headers/Public/UMCShare"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"SocialOfficialWeChat" -l"SocialWeChat" -l"WeChatSDK" -l"c++" -l"sqlite3" -l"z" -framework "AFNetworking" -framework "CoreGraphics" -framework "CoreTelephony" -framework "SystemConfiguration" -framework "UMCommon" -framework "UMShare" -framework "YYCache"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

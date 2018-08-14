@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B0BB47B74BEFB8C23CAB1C6 /* Pods_scanCodeLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66340E8322564770770DF425 /* Pods_scanCodeLogin.framework */; };
+		EA90723321229E52001030DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA90723221229E52001030DF /* AppDelegate.m */; };
+		EA90723621229E52001030DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA90723521229E52001030DF /* ViewController.m */; };
+		EA90723921229E52001030DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA90723721229E52001030DF /* Main.storyboard */; };
+		EA90723B21229E52001030DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA90723A21229E52001030DF /* Assets.xcassets */; };
+		EA90723E21229E52001030DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA90723C21229E52001030DF /* LaunchScreen.storyboard */; };
+		EA90724121229E52001030DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA90724021229E52001030DF /* main.m */; };
+		EA90724E2122A000001030DF /* ScanCodeLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA90724D2122A000001030DF /* ScanCodeLoginViewController.m */; };
+		EA9072562122A4CC001030DF /* AQNetWorkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9072512122A4CC001030DF /* AQNetWorkCache.m */; };
+		EA9072572122A4CC001030DF /* AQNetWorkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9072532122A4CC001030DF /* AQNetWorkHelper.m */; };
+		EA9072582122A4CC001030DF /* AQNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9072552122A4CC001030DF /* AQNetworkRequest.m */; };
+		EA90725B2122A708001030DF /* AQUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9072592122A708001030DF /* AQUserDefaults.m */; };
+		EA9072612122A8FA001030DF /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = EA90725D2122A8F9001030DF /* GTMBase64.m */; };
+		EA9072622122A8FA001030DF /* NSString+Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = EA90725F2122A8FA001030DF /* NSString+Coding.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		66340E8322564770770DF425 /* Pods_scanCodeLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scanCodeLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CC60DA0207CD8249DC1B3BF /* Pods-scanCodeLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanCodeLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-scanCodeLogin/Pods-scanCodeLogin.release.xcconfig"; sourceTree = "<group>"; };
+		B82B1EB90A23ADE8E7C716DF /* Pods-scanCodeLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanCodeLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scanCodeLogin/Pods-scanCodeLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		EA90722E21229E52001030DF /* scanCodeLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scanCodeLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA90723121229E52001030DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA90723221229E52001030DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA90723421229E52001030DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA90723521229E52001030DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA90723821229E52001030DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA90723A21229E52001030DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA90723D21229E52001030DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA90723F21229E52001030DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA90724021229E52001030DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA90724C21229FFF001030DF /* ScanCodeLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanCodeLoginViewController.h; sourceTree = "<group>"; };
+		EA90724D2122A000001030DF /* ScanCodeLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanCodeLoginViewController.m; sourceTree = "<group>"; };
+		EA9072502122A4CC001030DF /* AQNetWorkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQNetWorkCache.h; sourceTree = "<group>"; };
+		EA9072512122A4CC001030DF /* AQNetWorkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQNetWorkCache.m; sourceTree = "<group>"; };
+		EA9072522122A4CC001030DF /* AQNetWorkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQNetWorkHelper.h; sourceTree = "<group>"; };
+		EA9072532122A4CC001030DF /* AQNetWorkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQNetWorkHelper.m; sourceTree = "<group>"; };
+		EA9072542122A4CC001030DF /* AQNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQNetworkRequest.h; sourceTree = "<group>"; };
+		EA9072552122A4CC001030DF /* AQNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQNetworkRequest.m; sourceTree = "<group>"; };
+		EA9072592122A708001030DF /* AQUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQUserDefaults.m; sourceTree = "<group>"; };
+		EA90725A2122A708001030DF /* AQUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQUserDefaults.h; sourceTree = "<group>"; };
+		EA90725C2122A8F9001030DF /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		EA90725D2122A8F9001030DF /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		EA90725E2122A8F9001030DF /* NSString+Coding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Coding.h"; sourceTree = "<group>"; };
+		EA90725F2122A8FA001030DF /* NSString+Coding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Coding.m"; sourceTree = "<group>"; };
+		EA9072602122A8FA001030DF /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA90722B21229E52001030DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B0BB47B74BEFB8C23CAB1C6 /* Pods_scanCodeLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		141F88AC57FF3FB3DB69112F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66340E8322564770770DF425 /* Pods_scanCodeLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2806929D5C706CE3F3B2E996 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B82B1EB90A23ADE8E7C716DF /* Pods-scanCodeLogin.debug.xcconfig */,
+				6CC60DA0207CD8249DC1B3BF /* Pods-scanCodeLogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA90722521229E52001030DF = {
+			isa = PBXGroup;
+			children = (
+				EA90723021229E52001030DF /* scanCodeLogin */,
+				EA90722F21229E52001030DF /* Products */,
+				2806929D5C706CE3F3B2E996 /* Pods */,
+				141F88AC57FF3FB3DB69112F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA90722F21229E52001030DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA90722E21229E52001030DF /* scanCodeLogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA90723021229E52001030DF /* scanCodeLogin */ = {
+			isa = PBXGroup;
+			children = (
+				EA90724F2122A4CC001030DF /* WJNetWorkTool */,
+				EA90723121229E52001030DF /* AppDelegate.h */,
+				EA90723221229E52001030DF /* AppDelegate.m */,
+				EA90723421229E52001030DF /* ViewController.h */,
+				EA90723521229E52001030DF /* ViewController.m */,
+				EA90724C21229FFF001030DF /* ScanCodeLoginViewController.h */,
+				EA90724D2122A000001030DF /* ScanCodeLoginViewController.m */,
+				EA90723721229E52001030DF /* Main.storyboard */,
+				EA90723A21229E52001030DF /* Assets.xcassets */,
+				EA90723C21229E52001030DF /* LaunchScreen.storyboard */,
+				EA90723F21229E52001030DF /* Info.plist */,
+				EA9072632122A8FE001030DF /* vender */,
+				EA90725A2122A708001030DF /* AQUserDefaults.h */,
+				EA9072592122A708001030DF /* AQUserDefaults.m */,
+				EA90724021229E52001030DF /* main.m */,
+			);
+			path = scanCodeLogin;
+			sourceTree = "<group>";
+		};
+		EA90724F2122A4CC001030DF /* WJNetWorkTool */ = {
+			isa = PBXGroup;
+			children = (
+				EA9072502122A4CC001030DF /* AQNetWorkCache.h */,
+				EA9072512122A4CC001030DF /* AQNetWorkCache.m */,
+				EA9072522122A4CC001030DF /* AQNetWorkHelper.h */,
+				EA9072532122A4CC001030DF /* AQNetWorkHelper.m */,
+				EA9072542122A4CC001030DF /* AQNetworkRequest.h */,
+				EA9072552122A4CC001030DF /* AQNetworkRequest.m */,
+			);
+			path = WJNetWorkTool;
+			sourceTree = "<group>";
+		};
+		EA9072632122A8FE001030DF /* vender */ = {
+			isa = PBXGroup;
+			children = (
+				EA9072602122A8FA001030DF /* GTMBase64.h */,
+				EA90725D2122A8F9001030DF /* GTMBase64.m */,
+				EA90725C2122A8F9001030DF /* GTMDefines.h */,
+				EA90725E2122A8F9001030DF /* NSString+Coding.h */,
+				EA90725F2122A8FA001030DF /* NSString+Coding.m */,
+			);
+			path = vender;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA90722D21229E52001030DF /* scanCodeLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA90724421229E52001030DF /* Build configuration list for PBXNativeTarget "scanCodeLogin" */;
+			buildPhases = (
+				6638DD870649994D29B2DDF1 /* [CP] Check Pods Manifest.lock */,
+				EA90722A21229E52001030DF /* Sources */,
+				EA90722B21229E52001030DF /* Frameworks */,
+				EA90722C21229E52001030DF /* Resources */,
+				B80174DABBCBF77995B4B7BD /* [CP] Embed Pods Frameworks */,
+				7A8837A67E475F25691FDE9A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = scanCodeLogin;
+			productName = scanCodeLogin;
+			productReference = EA90722E21229E52001030DF /* scanCodeLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA90722621229E52001030DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = wjwl;
+				TargetAttributes = {
+					EA90722D21229E52001030DF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EA90722921229E52001030DF /* Build configuration list for PBXProject "scanCodeLogin" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA90722521229E52001030DF;
+			productRefGroup = EA90722F21229E52001030DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA90722D21229E52001030DF /* scanCodeLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA90722C21229E52001030DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA90723E21229E52001030DF /* LaunchScreen.storyboard in Resources */,
+				EA90723B21229E52001030DF /* Assets.xcassets in Resources */,
+				EA90723921229E52001030DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6638DD870649994D29B2DDF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scanCodeLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A8837A67E475F25691FDE9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scanCodeLogin/Pods-scanCodeLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B80174DABBCBF77995B4B7BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-scanCodeLogin/Pods-scanCodeLogin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scanCodeLogin/Pods-scanCodeLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA90722A21229E52001030DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9072572122A4CC001030DF /* AQNetWorkHelper.m in Sources */,
+				EA9072582122A4CC001030DF /* AQNetworkRequest.m in Sources */,
+				EA90724E2122A000001030DF /* ScanCodeLoginViewController.m in Sources */,
+				EA90723621229E52001030DF /* ViewController.m in Sources */,
+				EA90725B2122A708001030DF /* AQUserDefaults.m in Sources */,
+				EA90724121229E52001030DF /* main.m in Sources */,
+				EA9072562122A4CC001030DF /* AQNetWorkCache.m in Sources */,
+				EA9072612122A8FA001030DF /* GTMBase64.m in Sources */,
+				EA90723321229E52001030DF /* AppDelegate.m in Sources */,
+				EA9072622122A8FA001030DF /* NSString+Coding.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA90723721229E52001030DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA90723821229E52001030DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA90723C21229E52001030DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA90723D21229E52001030DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA90724221229E52001030DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA90724321229E52001030DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA90724521229E52001030DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B82B1EB90A23ADE8E7C716DF /* Pods-scanCodeLogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BEEBGDP9T;
+				INFOPLIST_FILE = scanCodeLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjwla.scanCodeLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA90724621229E52001030DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC60DA0207CD8249DC1B3BF /* Pods-scanCodeLogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BEEBGDP9T;
+				INFOPLIST_FILE = scanCodeLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjwla.scanCodeLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA90722921229E52001030DF /* Build configuration list for PBXProject "scanCodeLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA90724221229E52001030DF /* Debug */,
+				EA90724321229E52001030DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA90724421229E52001030DF /* Build configuration list for PBXNativeTarget "scanCodeLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA90724521229E52001030DF /* Debug */,
+				EA90724621229E52001030DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA90722621229E52001030DF /* Project object */;
+}

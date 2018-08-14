@@ -1,0 +1,9 @@
+
+platform :ios, '8.0'
+use_frameworks!
+target 'scanCodeLogin' do
+pod 'UMCCommon'
+pod 'UMCShare/Social/WeChat'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'YYCache'
+end

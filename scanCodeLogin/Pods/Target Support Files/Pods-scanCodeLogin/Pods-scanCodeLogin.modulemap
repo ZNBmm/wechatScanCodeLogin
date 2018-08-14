@@ -1,0 +1,6 @@
+framework module Pods_scanCodeLogin {
+  umbrella header "Pods-scanCodeLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}
